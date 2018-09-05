@@ -39,7 +39,7 @@ if ( ! class_exists( 'Prtfl_Settings_Tabs' ) ) {
 				'tabs' 				 => $tabs,
 				'wp_slug'			 => 'portfolio',
 				'demo_data'			 => $prtfl_BWS_demo_data,
-				'pro_page' 			 => 'edit.php?post_type=portfolio&page=portfolio-pro.php',
+				'pro_page' 			 => 'edit.php?post_type=bws-portfolio&page=portfolio-pro.php',
 				'bws_license_plugin' => 'portfolio-pro/portfolio-pro.php',
 				'link_key' 			 => 'f047e20c92c972c398187a4f70240285',
 				'link_pn' 			 => '74',

@@ -6,7 +6,7 @@ Description: Create your personal portfolio WordPress website. Manage and showca
 Author: BestWebSoft
 Text Domain: portfolio
 Domain Path: /languages
-Version: 2.45
+Version: 2.46
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -1881,12 +1881,7 @@ if ( ! function_exists( 'prtfl_post_get_content' ) ) {
 	function prtfl_post_get_content() {
 		global $post, $prtfl_options;
 
-		$second_query = new WP_Query( $args );
-		$request = $second_query->request;
-	if ( $second_query->have_post() ) {
-		while ( $second_query->have_posts() ) {
-			$second_query->the_post();
-			?>
+		while ( have_posts() ) : the_post(); ?>
 			<article class="portfolio_content entry-content">
 				<div class="entry">
 					<?php global $post;
@@ -2064,8 +2059,7 @@ if ( ! function_exists( 'prtfl_post_get_content' ) ) {
 					} ?>
 				</div><!-- .entry_footer .entry-footer -->
 			</article><!-- .portfolio_content -->
-				<?php }
-		}
+		<?php endwhile;
 	}
 }
 
