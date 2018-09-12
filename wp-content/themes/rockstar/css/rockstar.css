@@ -1,10 +1,16 @@
+@font-face {
+    font-family: 'Muli';
+    src: url('/rockstar-code/wp-content/themes/rockstar/fonts/Muli-Regular.ttf');
+}
+
 html,
 body {
     margin: 0;
     color: #333;
     background: #eee;
-    font-family: sans-serif;
+    font-family: 'Muli';
 }
+
 
 body {
     padding: 20px;
