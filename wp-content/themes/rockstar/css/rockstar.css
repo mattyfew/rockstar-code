@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Muli';
-    src: url('/rockstar-code/wp-content/themes/rockstar/fonts/Muli-Regular.ttf');
-}
+@font-face { font-family: 'Muli'; src: url('/rockstar-code/wp-content/themes/rockstar/fonts/Muli-Regular.ttf'); }
 
 html,
 body {
@@ -12,30 +9,29 @@ body {
 }
 
 
-body {
-    padding: 20px;
-    margin: 0;
-}
+/* body { padding: 20px; margin: 0; } */
 
-.home {
-    background-color: #2d3436;
-    color: white;
-}
+.home { background-color: #0a0808; color: white; }
 
-.hamburger-menu {
-    width: 50px;
-    height: 50px;
-}
-
+.hamburger-menu { width: 50px; height: 50px; margin: 20px 0 0 20px; }
+#main-container { height: 100vh; }
 #intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-#mattfewer {
-    webkit-transform: rotate(-90deg);
-      -webkit-transform-origin: 0 0;
-      position:relative;
-      top:100%;
-      max-width: 500px;
+#logo { height: 150px; }
+#main-img { max-width: 600px; }
+
+.intro-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

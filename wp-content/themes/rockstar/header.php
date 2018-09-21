@@ -15,6 +15,6 @@
     ?>
 
     <body <?php body_class($rockstar_classes); ?>>
-        <img class="hamburger-menu" src="<?php echo get_template_directory_uri(); ?>/img/hamburger-white.svg" />
+        <!-- <img class="hamburger-menu" src="<?php echo get_template_directory_uri(); ?>/img/hamburger-white.svg" /> -->
 
         <!-- <?php wp_nav_menu(array('theme_location' => 'primary')); ?> -->
